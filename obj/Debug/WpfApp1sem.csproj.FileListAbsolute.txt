@@ -1,0 +1,15 @@
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.csproj.AssemblyReference.cache
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\MainWindow.g.cs
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\App.g.cs
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem_MarkupCompile.cache
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem_MarkupCompile.lref
+C:\Users\Anastasia\source\repos\WpfApp1sem\bin\Debug\WpfApp1sem.exe.config
+C:\Users\Anastasia\source\repos\WpfApp1sem\bin\Debug\WpfApp1sem.exe
+C:\Users\Anastasia\source\repos\WpfApp1sem\bin\Debug\WpfApp1sem.pdb
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\MainWindow.baml
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.g.resources
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.Properties.Resources.resources
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.csproj.GenerateResource.cache
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.csproj.CoreCompileInputs.cache
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.exe
+C:\Users\Anastasia\source\repos\WpfApp1sem\obj\Debug\WpfApp1sem.pdb
