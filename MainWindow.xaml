@@ -27,48 +27,48 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBox Name="calc" Grid.Row="0"  Grid.ColumnSpan="5" FontSize="20" FontFamily="Arial" Foreground="SlateGray" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" Height="40" TextAlignment="Right"/>
-        <TextBox Name="calc2" Grid.Row="1"  Grid.ColumnSpan="5" FontSize="30" FontFamily="Arial" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" Height="40" TextAlignment="Right"/>
-        <Button Grid.Row="2" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">sin</Button>
-        <Button Grid.Row="2" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">π</Button>
-        <Button Grid.Row="2" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">e</Button>
-        <Button Grid.Row="2" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">CE</Button>
-        <Button Grid.Row="2" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">Back</Button>
+        <TextBox Name="calc" Grid.Row="0"  Grid.ColumnSpan="5" FontSize="20" FontFamily="Arial" Foreground="SlateGray" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" Height="40" TextAlignment="Right" TextWrapping="Wrap" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"/>
+        <TextBox Name="calc2" Grid.Row="1"  Grid.ColumnSpan="5" FontSize="30" FontFamily="Arial" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" Height="40" TextAlignment="Right" TextWrapping="NoWrap" HorizontalScrollBarVisibility="Auto" IsReadOnly="True"/>
+        <Button Grid.Row="2" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">sin</Button>
+        <Button Grid.Row="2" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">π</Button>
+        <Button Grid.Row="2" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">e</Button>
+        <Button Grid.Row="2" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="ClearAll">CE</Button>
+        <Button Grid.Row="2" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">⌫</Button>
 
-        <Button Grid.Row="3" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">x²</Button>
-        <Button Grid.Row="3" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">1/x</Button>
-        <Button Grid.Row="3" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">|x|</Button>
-        <Button Grid.Row="3" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">cos</Button>
-        <Button Grid.Row="3" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">tg</Button>
+        <Button Grid.Row="3" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">x²</Button>
+        <Button Grid.Row="3" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">1/x</Button>
+        <Button Grid.Row="3" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">|x|</Button>
+        <Button Grid.Row="3" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">cos</Button>
+        <Button Grid.Row="3" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">tg</Button>
 
-        <Button Grid.Row="4" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">√x</Button>
-        <Button Grid.Row="4" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">(</Button>
-        <Button Grid.Row="4" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">)</Button>
-        <Button Grid.Row="4" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">n!</Button>
-        <Button Grid.Row="4" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_division">÷</Button>
+        <Button Grid.Row="4" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">√x</Button>
+        <Button Grid.Row="4" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">(</Button>
+        <Button Grid.Row="4" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">)</Button>
+        <Button Grid.Row="4" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">n!</Button>
+        <Button Grid.Row="4" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Oper">÷</Button>
 
-        <Button Grid.Row="5" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">xʸ</Button>
-        <Button Grid.Row="5" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_7">7</Button>
-        <Button Grid.Row="5" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_8">8</Button>
-        <Button Grid.Row="5" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_9">9</Button>
-        <Button Grid.Row="5" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_multiplier">×</Button>
+        <Button Grid.Row="5" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">xʸ</Button>
+        <Button Grid.Row="5" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">7</Button>
+        <Button Grid.Row="5" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">8</Button>
+        <Button Grid.Row="5" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">9</Button>
+        <Button Grid.Row="5" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Oper">×</Button>
 
-        <Button Grid.Row="6" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">10ˣ</Button>
-        <Button Grid.Row="6" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_4">4</Button>
-        <Button Grid.Row="6" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_5">5</Button>
-        <Button Grid.Row="6" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_6">6</Button>
-        <Button Grid.Row="6" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_minus">-</Button>
+        <Button Grid.Row="6" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">10ˣ</Button>
+        <Button Grid.Row="6" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">4</Button>
+        <Button Grid.Row="6" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">5</Button>
+        <Button Grid.Row="6" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">6</Button>
+        <Button Grid.Row="6" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Oper">-</Button>
 
-        <Button Grid.Row="7" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">log</Button>
-        <Button Grid.Row="7" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_1">1</Button>
-        <Button Grid.Row="7" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_2">2</Button>
-        <Button Grid.Row="7" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_3">3</Button>
-        <Button Grid.Row="7" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_plus">+</Button>
+        <Button Grid.Row="7" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">log</Button>
+        <Button Grid.Row="7" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">1</Button>
+        <Button Grid.Row="7" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">2</Button>
+        <Button Grid.Row="7" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">3</Button>
+        <Button Grid.Row="7" Grid.Column="4" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Oper">+</Button>
 
-        <Button Grid.Row="8" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">ln</Button>
-        <Button Grid.Row="8" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">+/-</Button>
-        <Button Grid.Row="8" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Click_0">0</Button>
-        <Button Grid.Row="8" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold">,</Button>
-        <Button Grid.Row="8" Grid.Column="4" Background="CadetBlue" FontSize="15" FontFamily="Arial" FontWeight="Bold">=</Button>
+        <Button Grid.Row="8" Grid.Column="0" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">ln</Button>
+        <Button Grid.Row="8" Grid.Column="1" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">+/-</Button>
+        <Button Grid.Row="8" Grid.Column="2" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="Button_Numb">0</Button>
+        <Button Grid.Row="8" Grid.Column="3" Background="GhostWhite" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="FunctionButton_Click">.</Button>
+        <Button Grid.Row="8" Grid.Column="4" Background="CadetBlue" FontSize="15" FontFamily="Arial" FontWeight="Bold" Click="EqualsButton_Click">=</Button>
     </Grid>
 </Window>
